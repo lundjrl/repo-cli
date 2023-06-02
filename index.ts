@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 import sh from 'shelljs'
 import { colors } from './src/colors.js'
 import { program } from './src/commander.js'
@@ -23,7 +25,6 @@ export const main = () => {
   const result = getTemplate(options)
 
   if (result?.path && result?.replacementName && result?.repo) {
-    console.log(!!result?.path, !!result?.replacementName, !!result?.repo)
     const projectName = options.projectName
     const { path, replacementName, repo } = result
     console.log(colors.warning(`Creating project ${projectName} in ${path}`))

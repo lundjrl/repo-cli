@@ -13,7 +13,7 @@ export const getTemplate: TemplateResult = options => {
   if (options.n) {
     return {
       path,
-      replacementName: 'Node-template',
+      replacementName: 'Node-Template',
       repo: 'https://github.com/lundjrl/Node-Template.git',
     }
   } else if (options.Njs) {
