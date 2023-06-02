@@ -1,13 +1,16 @@
 {
-  "name": "repo-cli",
+  "name": "@lundjrl-npm/repo-cli",
   "version": "1.0.0",
   "description": "Cli tool for pulling templated repos quickly",
-  "main": "index.ts",
+  "main": "dist/index.js",
   "author": "lundjrl",
   "license": "MIT",
   "private": false,
   "keywords": [],
   "type": "module",
+  "bin": {
+    "repo-cli": "dist/index.js"
+  },
   "scripts": {
     "build": "npx tsc",
     "start": "node dist/index.js"

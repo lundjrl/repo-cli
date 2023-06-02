@@ -1,7 +1,7 @@
 import type { OptionValues } from 'commander'
 import sh from 'shelljs'
 
-type TemplateResult = (options: OptionValues) => { path: string; replacementName: string; repo: string } | void
+type TemplateResult = (options: OptionValues) => { path: string; replacementName: string; repo: string } | null
 
 export const getTemplate: TemplateResult = options => {
   if (!options) {
@@ -30,5 +30,5 @@ export const getTemplate: TemplateResult = options => {
     }
   }
 
-  return
+  return null
 }

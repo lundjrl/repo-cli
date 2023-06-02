@@ -5,7 +5,7 @@ import { getTemplate } from './src/getTemplate.js'
 import { precheck } from './src/precheck.js'
 import { initAnimation } from './src/animation.js'
 
-const main = () => {
+export const main = () => {
   console.log(colors.info('\nStarting cli...'))
 
   // Check to see if sh deps are installed
@@ -16,9 +16,14 @@ const main = () => {
 
   const options = program.opts()
 
+  if (!options.projectName) {
+    sh.exit(0)
+  }
+
   const result = getTemplate(options)
 
-  if (result) {
+  if (result?.path && result?.replacementName && result?.repo) {
+    console.log(!!result?.path, !!result?.replacementName, !!result?.repo)
     const projectName = options.projectName
     const { path, replacementName, repo } = result
     console.log(colors.warning(`Creating project ${projectName} in ${path}`))
