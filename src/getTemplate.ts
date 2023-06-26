@@ -10,19 +10,19 @@ export const getTemplate: TemplateResult = options => {
 
   const path = `./${options.projectName}`
 
-  if (options.n) {
-    return {
-      path,
-      replacementName: 'Node-Template',
-      repo: 'https://github.com/lundjrl/Node-Template.git',
-    }
-  } else if (options.Njs) {
+  if (typeof options.Njs === 'boolean') {
     return {
       path,
       replacementName: 'Next-App-Template',
       repo: 'https://github.com/lundjrl/Next-App-Template.git',
     }
-  } else if (options.Rn) {
+  } else if (typeof options.n === 'boolean') {
+    return {
+      path,
+      replacementName: 'Node-Template',
+      repo: 'https://github.com/lundjrl/Node-Template.git',
+    }
+  } else if (typeof options.Rn === 'boolean') {
     return {
       path,
       replacementName: 'React-Native-Template',
