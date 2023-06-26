@@ -20,13 +20,13 @@ export const getTemplate: TemplateResult = options => {
     return {
       path,
       replacementName: 'Next-App-Template',
-      repo: 'https://github.com/lundjrl/Next-App-Template',
+      repo: 'https://github.com/lundjrl/Next-App-Template.git',
     }
   } else if (options.Rn) {
     return {
       path,
       replacementName: 'React-Native-Template',
-      repo: 'https://github.com/lundjrl/React-Native-Template',
+      repo: 'https://github.com/lundjrl/React-Native-Template.git',
     }
   }
 
