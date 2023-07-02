@@ -34,6 +34,9 @@ export const main = () => {
     sh.exec(`git clone ${repo} ${projectName}`)
     sh.cd(path)
 
+    // Remove the .git folder
+    sh.exec(`rm -rf .git`)
+
     // Replace all instances of template name with new project name
     sh.ls('*.*').forEach(file => {
       sh.sed('-i', replacementName, projectName, file)
