@@ -1,6 +1,6 @@
 {
   "name": "@lundjrl-npm/repo-cli",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Cli tool for pulling templated repos quickly",
   "main": "dist/index.js",
   "author": "lundjrl",
