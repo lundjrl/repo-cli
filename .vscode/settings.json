@@ -12,5 +12,6 @@
   },
   "typescript.preferences.importModuleSpecifier": "project-relative",
   "typescript.tsdk": "node_modules/typescript/lib",
-  "typescript.enablePromptUseWorkspaceTsdk": true
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "cSpell.words": ["lundjrl", "nextjs", "precheck"]
 }

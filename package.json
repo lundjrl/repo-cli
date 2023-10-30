@@ -1,6 +1,6 @@
 {
   "name": "@lundjrl-npm/repo-cli",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Cli tool for pulling templated repos quickly",
   "main": "dist/index.js",
   "author": "lundjrl",
@@ -16,6 +16,7 @@
     "start": "node dist/index.js"
   },
   "dependencies": {
+    "@types/shelljs": "^0.8.14",
     "chalk": "^5.2.0",
     "commander": "^11.0.0",
     "shelljs": "^0.8.5"
