@@ -1,5 +1,12 @@
 # repo-cli
+
 A Node.js cli tool to quickly clone templated repos
+
+<div align="center">
+
+  <a href="">[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?color=blue)](https://opensource.org/licenses/MIT)</a>
+
+</div>
 
 ### How to use:
 1. Clone the tool and run `yarn install` to install all dependencies.
